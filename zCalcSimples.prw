@@ -9,6 +9,8 @@ User Function zCalcSimples()
 
 //Define qual vai ser a operação
 	Local cOperacao := FWInputBox("Qual operacao deseja fazer: ", "")
+
+//Aloca o resultado
     Local nResultado
 
 
@@ -16,15 +18,10 @@ User Function zCalcSimples()
 
 //Mostra o valor e o tipo do valor alocado
 	MsgInfo("O tipo é: " + VALTYPE(nNum1) + CRLF + "O valor é: " +  CValToChar(nNum1), "Primeiro Valor")
-	// MsgInfo(nNum1, "")
     MsgInfo("O tipo é: " + VALTYPE(nNum2) + CRLF + "O valor é: " +  CValToChar(nNum2), "Segundo Valor")
-	// MsgInfo(VALTYPE(nNum2) + nNum2, "")
-	// MsgInfo(nNum2, "")
     MsgInfo("O tipo é: " + VALTYPE(cOperacao) + CRLF + "O valor é: " +  CValToChar(cOperacao), "Operação Selecionada")
-	// MsgInfo(VALTYPE(cOperacao) + cOperacao, "")
-	// MsgInfo(cOperacao, "")
-
-//Faz o calculo de acordo com a operação indicada
+	
+//Faz o calculo de acordo com a operação indicada e mostra o resultado
 if cOperacao == "+"
 		nResultado := nNum1 + nNum2
         MsgInfo(nResultado, "O resultado da soma e: ")
