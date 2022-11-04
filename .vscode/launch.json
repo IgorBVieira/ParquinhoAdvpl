@@ -1,27 +1,22 @@
 {
-	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Advpl Debug",
-			"type": "advpl",
+			"type": "totvs_language_debug",
 			"request": "launch",
+			"name": "Smart Client Debug",
+			"program": "${command:AskForProgramName}",
+			"smartclientBin": "C:/TOTVS/protheus/Protheus/bin/smartclient/smartclient.exe",
+			"cwb": "${workspaceFolder}",
+			"isMultiSession": true,
+			"enableTableSync": true
+		}
+	],
+	"lastPrograms": [
+		{
 			"args": [],
-			"cwd": "",
-			"programRun": "${command:AskForProgramName}",
-			"stopOnEntry": false,
-			"enviromentInfo": "${command:GetEnvInfos}",
-			"workspace": "${workspaceFolder}/"
-		},
-
-		// {
-		// 	// "type": "totvs_language_debug",
-		// 	// "request": "launch",
-		// 	// "name": "TOTVS Language Debug",
-		// 	// "program": "${command:AskForProgramName}",
-		// 	// "cwb": "${workspaceFolder}",
-		// 	// "smartclientBin": "../totvs/bin/smartclient/smartclient.exe",
-		// 	// "isMultiSession": true,
-		// 	// "enableTableSync": true
-		// }
-	]
+			"label": "u_zMiniForm"
+		}
+	],
+	"lastProgramExecuted": "u_zMiniForm",
+	"lastProgramArgumens": []
 }
